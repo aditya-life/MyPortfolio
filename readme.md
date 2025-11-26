@@ -1,213 +1,210 @@
-# 🚀 MERN Stack Portfolio Website with Admin Panel
+# 🚀 Aditya Kumar – MERN Stack Portfolio Website with Admin Panel
 
-A modern, responsive portfolio website built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Bootstrap. Features a comprehensive admin panel for content management and a professional frontend showcase.
+A modern, responsive personal portfolio website built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and Bootstrap. Features a professional frontend to showcase projects, skills, experience, and an **admin panel** for content management.
 
+---
 
 ## ✨ Features
 
 ### 🌟 Frontend Features
-- **Responsive Design** - Bootstrap-powered responsive layout that works on all devices
-- **Modern UI/UX** - Clean, professional design with smooth animations
-- **Project Showcase** - Dynamic project gallery with filtering and search
-- **Contact Form** - Working contact form with validation and email notifications
-- **Skills Section** - Interactive skills display with progress bars
-- **About Section** - Personal information and professional summary
-- **Resume Download** - Downloadable resume/CV functionality
-- **SEO Optimized** - Meta tags, structured data, and optimized performance
+
+* **Responsive Design** – Bootstrap-powered responsive layout for desktop and mobile
+* **Modern UI/UX** – Clean design with animations and hover effects
+* **Project Showcase** – Dynamic gallery with live demo & GitHub links
+* **Contact Form** – Functional form with email integration
+* **Skills Section** – Interactive tech stack display
+* **About Section** – Professional summary and personal information
+* **Resume Download** – Direct download link for CV
+* **Hire Me Button** – Floating button for quick contact
 
 ### 🔧 Admin Panel Features
-- **Secure Authentication** - JWT-based admin login system
-- **Project Management** - Add, edit, delete, and reorder portfolio projects
-- **Image Upload** - Upload and manage project images with preview
-- **Contact Management** - View and manage contact form submissions
-- **Content Editor** - Rich text editor for project descriptions
-- **Dashboard Analytics** - Basic statistics and insights
-- **Profile Management** - Update personal information and skills
+
+* **Secure Login** – JWT-based admin authentication
+* **Project Management** – Add, edit, delete, and manage portfolio projects
+* **Contact Management** – View and respond to messages
+* **Profile Management** – Update personal info, skills, and experience
+* **Dashboard Analytics** – Quick overview of portfolio activity
 
 ### 🛠️ Technical Features
-- **RESTful API** - Well-structured API endpoints
-- **File Upload** - Image upload with validation and compression
-- **Email Integration** - Automated email notifications
-- **Database Relations** - Optimized MongoDB schema design
-- **Error Handling** - Comprehensive error handling and validation
-- **Security** - Password hashing, input sanitization, and CORS protection
+
+* **RESTful API** – Structured endpoints for projects and messages
+* **Image Upload** – Handle project images with preview support
+* **Email Integration** – Automated notifications for contact form
+* **Database Relations** – Optimized MongoDB schema design
+* **Error Handling & Validation** – Robust handling of API requests
+* **Security** – Password hashing, CORS protection, input sanitization
+
+---
 
 ## 🏗️ Tech Stack
 
 ### Frontend
-- **React.js** - Frontend framework
-- **Bootstrap 5** - CSS framework for responsive design
-- **React Router** - Client-side routing
-- **Axios** - HTTP client for API requests
 
+* **React.js** – Frontend library
+* **Bootstrap 5** – Responsive design framework
+* **React Router** – Client-side routing
+* **Axios** – HTTP client for API requests
 
 ### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB object modeling
 
-### Additional Tools
-- **JWT** - Authentication tokens
-- **Bcrypt** - Password hashing
-- **Validator** - For Validation
+* **Node.js** – Server runtime environment
+* **Express.js** – Web framework
+* **MongoDB** – Database
+* **Mongoose** – ODM for MongoDB
+* **JWT** – Authentication
+* **Bcrypt** – Password hashing
+
+### Tools & Libraries
+
+* **Postman** – API testing
+* **Cloudinary** – Image hosting
+* **Render** – Deployment
+* **Git & GitHub** – Version control
+
+---
 
 ## 📁 Project Structure
 
 ```
-portfolio-website/
-├── client/                     # React frontend
+MyPortfolio/
+├── frontend/                  # React frontend
 │   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
+│   │   └── index.html
 │   ├── src/
-│   │   ├── components/         # Reusable components
-│   │   │   ├── Navbar.js
-│   │   │   ├── Footer.js
-│   │   │   ├── ProjectCard.js
-│   │   │   └── ContactForm.js
-│   │   ├── pages/              # Page components
-│   │   │   ├── Home.js
-│   │   │   ├── Projects.js
-│   │   │   ├── Contact.js
-│   │   │   └── AdminDashboard.js
-│   │   ├── context/            # React context
-│   │   │   └── AuthContext.js
-│   │   ├── utils/              # Utility functions
-│   │   │   └── api.js
-│   │   ├── styles/             # CSS files
-│   │   │   └── custom.css
+│   │   ├── components/        # Reusable components (Navbar, Footer, Hero, Projects, TechStack)
+│   │   ├── pages/             # Page components (Home, About, Projects, Contact, AdminDashboard)
+│   │   ├── context/           # AuthContext
+│   │   ├── utils/             # API utils
 │   │   └── App.js
 │   ├── package.json
 │   └── README.md
-├── server/                     # Node.js backend
-│   ├── models/                 # Database models
-│   │   ├── User.js
-│   │   ├── Project.js
-│   │   └── Contact.js
-│   ├── routes/                 # API routes
-│   │   ├── auth.js
-│   │   ├── projects.js
-│   │   └── contact.js
-│   ├── middleware/             # Custom middleware
-│   │   ├── auth.js
-│   │   └── upload.js
-│   ├── utils/                  # Utility functions
-│   │   └── email.js
+├── server/                    # Node.js backend
+│   ├── models/                # MongoDB models (User, Project, Contact)
+│   ├── routes/                # API routes (auth, projects, contact)
+│   ├── middleware/            # Auth, upload middleware
+│   ├── utils/                 # Email & helper functions
 │   ├── server.js
 │   ├── package.json
 │   └── .env
-├── uploads/                    # Uploaded files
+├── uploads/                   # Uploaded files
 ├── .gitignore
 └── README.md
 ```
 
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB (local installation or MongoDB Atlas)
-- npm or yarn package manager
+
+* Node.js (v14+)
+* MongoDB (local or Atlas)
+* npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ankitjhagithub21/mern-portfolio.git
-   cd portfolio-website
-   ```
+
+```bash
+git clone https://github.com/aditya-life/MyPortfolio.git
+cd MyPortfolio
+```
 
 2. **Install backend dependencies**
-   ```bash
-   cd server
-   npm install
-   ```
+
+```bash
+cd server
+npm install
+```
 
 3. **Install frontend dependencies**
-   ```bash
-   cd ../client
-   npm install
-   ```
 
-4. **Environment Configuration**
-   
-   Create a `.env` file in the server directory:
-   ```env
-   # Database
-   MONGODB_URI=mongodb://localhost:27017/portfolio
-   
-   # JWT Secret
-   JWT_SECRET=your_super_secret_jwt_key_here
-   
-   # Server Configuration  
-   PORT=8000
- 
+```bash
+cd ../frontend
+npm install
+```
 
+4. **Configure Environment Variables** (`server/.env`)
 
-6. **Start the application**
-   
-   **Backend (Terminal 1):**
-   ```bash
-   cd server
-   npm run dev
-   ```
-   
-   **Frontend (Terminal 2):**
-   ```bash
-   cd client
-   npm run dev
-   ```
+```env
+MONGODB_URI=mongodb://localhost:27017/portfolio
+JWT_SECRET=your_jwt_secret
+PORT=8000
+```
 
-7. **Access the application**
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:8000
-   - Admin Panel: http://localhost:5173/admin/dashboard
+5. **Start Application**
+
+```bash
+# Backend
+cd server
+npm run dev
+
+# Frontend
+cd ../frontend
+npm run dev
+```
+
+6. **Access**
+
+* Frontend: [http://localhost:5173](http://localhost:5173)
+* Backend API: [http://localhost:8000](http://localhost:8000)
+* Admin Panel: [http://localhost:5173/admin/dashboard](http://localhost:5173/admin/dashboard)
+
+---
 
 ## 📱 Usage
 
-### For Visitors
-1. Browse the portfolio showcase
-2. View project details and live demos
-3. Download resume/CV
-4. Submit contact form for inquiries
+### Visitors
 
-### For Admin
-1. Login at `/admin/login` with your credentials
-2. Manage projects (add, edit, delete)
-3. View and respond to contact messages
-4. Update personal information and skills
+* Browse projects with live demo & GitHub links
+* View skills and experience
+* Download resume
+* Contact via floating Hire Me button
 
+### Admin
+
+* Login at `/admin/login`
+* Manage projects and contact messages
+* Update profile and skills
+
+---
+
+## 📝 API Endpoints
+
+### Auth
+
+* `POST /api/auth/login` – Admin login
+* `GET /api/auth/user` – Get admin info
+
+### Projects
+
+* `GET /api/projects` – Get all projects
+* `POST /api/projects` – Create project (auth required)
+* `PUT /api/projects/:id` – Update project (auth required)
+* `DELETE /api/projects/:id` – Delete project (auth required)
+
+### Contact
+
+* `POST /api/contact` – Submit message
+* `GET /api/contact` – Get all messages (auth required)
+* `PUT /api/contact/:id/read` – Mark message read (auth required)
+
+---
 
 ## 🤝 Contributing
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b your-branch-name`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin your-branch-name`)
+1. Fork the repo
+2. Create a branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to branch (`git push origin feature-name`)
 5. Open a Pull Request
 
-## 📝 API Documentation
+---
 
-### Authentication Endpoints
-- `POST /api/auth/login` - Admin login
-- `POST /api/auth/register` - Create admin account
-- `GET /api/auth/user` - Get User
+## 📧 Contact
 
-### Project Endpoints
-- `GET /api/projects` - Get all projects
-- `GET /api/projects/:id` - Get project By Id (auth required)
-- `POST /api/projects` - Create project (auth required)
-- `PUT /api/projects/:id` - Update project (auth required)
-- `DELETE /api/projects/:id` - Delete project (auth required)
-
-### Contact Endpoints
-- `POST /api/contact` - Submit contact form
-- `GET /api/contact` - Get all messages (auth required)
-- `PUT /api/contact/:id/read` - Mark message as read (auth required)
-
-
-
-
-
-
-
+* Email: [aditya12186@gmail.com](mailto:aditya12186@gmail.com)
+* LinkedIn: [https://www.linkedin.com/in/aditya-life](https://www.linkedin.com/in/aditya-life)
+* GitHub: [https://github.com/aditya-life](https://github.com/aditya-life)
+* Twitter/X: [https://x.com/RISK_LO](https://x.com/RISK_LO)
+* Instagram: [https://instagram.com/aadi_aditya](https://instagram.com/aadi_aditya)_
