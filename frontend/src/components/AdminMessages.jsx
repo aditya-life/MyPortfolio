@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const backendURL = import.meta.env.VITE_BACKEND_URL;
+
 const AdminMessages = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +12,7 @@ const AdminMessages = () => {
 
     const getAllMessages = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/contact");
+        const res = await axios.get(`${backendURL}/api/contact`);
         setMessages(res.data);
       } catch (error) {
         console.error("Failed to fetch messages:", error);

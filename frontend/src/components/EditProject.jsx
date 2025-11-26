@@ -22,7 +22,7 @@ const EditProject = () => {
     const fetchProject = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await axios.get(`http://localhost:8000/api/projects/${id}`, {
+        const res = await axios.get(`${backendURL}/api/projects/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -60,7 +60,7 @@ const EditProject = () => {
     };
 
     try {
-      await axios.put(`http://localhost:8000/api/projects/${id}`, updatedData, {
+      await axios.put(`${backendURL}/api/projects/${id}`, updatedData, {
         headers: { Authorization: `Bearer ${token}` }
       });
 

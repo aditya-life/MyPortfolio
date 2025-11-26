@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
+const backendURL = import.meta.env.VITE_BACKEND_URL;
+
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
@@ -23,7 +25,7 @@ export const AuthProvider = ({ children }) => {
   const fetchUser = async () => {
     try {
       // Add user verification endpoint if needed
-       const response = await axios.get('http://localhost:8000/api/auth/user');
+       const response = await axios.get(`${backendURL}/api/auth/user`);
       
       const { user } = response.data;
       setUser(user);
@@ -35,7 +37,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/login', {
+      const response = await axios.post(`${backendURL}/api/auth/login`, {
         email,
         password
       });

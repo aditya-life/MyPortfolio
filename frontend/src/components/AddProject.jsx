@@ -1,6 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 
+const backendURL = import.meta.env.VITE_BACKEND_URL;
+
+console.log("BACKEND URL =", import.meta.env.VITE_BACKEND_URL);
+
+
 const AddProject = () => {
   const [formData, setFormData] = useState({
     title: "",
@@ -32,7 +37,7 @@ const AddProject = () => {
     };
 
     try {
-      await axios.post("http://localhost:8000/api/projects", payload, {
+      await axios.post(`${backendURL}/api/projects`, payload, {
         headers: {
           Authorization: `Bearer ${token}`
         }
