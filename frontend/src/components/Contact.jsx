@@ -64,10 +64,10 @@ const Contact = () => {
               📧 <strong>Email:</strong> aditya12186@gmail.com
             </p>
             <p className="mb-1">
-              📧 <strong>Email:</strong> aadi_aditya@zohomail.in
+              📞 <strong>Mobile:</strong> 9504022167, 9582000167
             </p>
             <p className="mb-1">
-              📍 <strong>Location:</strong> India
+              📍 <strong>Location:</strong> Noida, Sector - 70, UP – 201301
             </p>
           </div>
         </div>

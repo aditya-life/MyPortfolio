@@ -51,7 +51,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="d-grid gap-3 d-sm-flex justify-content-sm-center">
           <a
-            href="/Aditya_MERN_Stack.pdf"
+            href="/Aditya_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn btn-primary btn-lg px-4 shadow-sm"
