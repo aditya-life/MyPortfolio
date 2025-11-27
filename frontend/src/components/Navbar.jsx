@@ -27,7 +27,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
             <li className="nav-item">
-              <a className="nav-link hover-scale" href="#home">Home</a>
+              <a className="nav-link hover-scale" href="#">Home</a>
             </li>
 
             <li className="nav-item">
