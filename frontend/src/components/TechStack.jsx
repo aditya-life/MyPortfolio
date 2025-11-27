@@ -35,7 +35,7 @@ const TechStack = () => {
 
   return (
     <section className="container py-5" id="techstack">
-      <h1 className="display-5 fw-bold text-center text-primary mb-5">
+      <h1 className="display-5 fw-bold text-center mt-3 text-primary mb-5">
         Tech Stack
       </h1>
 

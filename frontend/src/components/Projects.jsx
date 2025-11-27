@@ -28,7 +28,7 @@ const Projects = () => {
     <section className="text-center container py-5" id="projects">
       <div className="row py-lg-4">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">My Projects</h1>
+          <h1 className="display-5 fw-bold text-center mt-3 text-primary mb-5">My Projects</h1>
           <p className="lead text-body-secondary">
             Here are some of my featured projects.
           </p>

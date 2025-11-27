@@ -25,7 +25,7 @@ const Experience = () => {
 
   return (
     <section className="container py-5" id="experience">
-      <h2 className="text-center fw-bold mb-5">Experience</h2>
+      <h2 className="display-5 fw-bold text-center mt-3 text-primary mb-5">Experience</h2>
 
       {/* GRID */}
       <div className="row g-4">
