@@ -4,23 +4,23 @@ import { FaBriefcase } from "react-icons/fa";
 const Experience = () => {
   const timeline = [
     {
-      role: "Web Development Intern",
-      company: "Caktus Web Solution",
-      duration: "Nov 2025 – Present",
+      role: "MERN Stack Developer Intern",
+      company: "NCA. IT Solution",
+      duration: "Jun 2025 – Present",
       desc: "Working on MERN-based projects, building reusable components, fixing bugs, improving UI/UX, and deploying production-ready features.",
     },
     {
       role: "MERN Stack Trainee",
       company: "Ducat, Noida",
-      duration: "Jun 2025 – Oct 2025",
+      duration: "Jan 2025 – Jun 2025",
       desc: "Learned full-stack development, created APIs, authentication, CRUD apps, and mastered modern MERN workflows.",
     },
-    {
-      role: "Technical Support Engineer",
-      company: "Ramp Display Solutions Pvt Ltd",
-      duration: "May 2023 – Jul 2025",
-      desc: "Resolved complex technical issues, improved customer satisfaction, and enhanced internal technical processes.",
-    },
+    // {
+    //   role: "Technical Support Engineer",
+    //   company: "Ramp Display Solutions Pvt Ltd",
+    //   duration: "May 2023 – Jul 2025",
+    //   desc: "Resolved complex technical issues, improved customer satisfaction, and enhanced internal technical processes.",
+    // },
   ];
 
   return (
