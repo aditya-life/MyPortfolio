@@ -5,7 +5,7 @@ const Experience = () => {
   const timeline = [
     {
       role: "MERN Stack Developer Intern",
-      company: "NCA. IT Solution",
+      company: "NCA IT Solution, Noida",
       duration: "Jun 2025 – Present",
       desc: "Working on MERN-based projects, building reusable components, fixing bugs, improving UI/UX, and deploying production-ready features.",
     },
